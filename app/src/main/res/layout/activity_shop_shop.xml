@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/shop_shop_back_iv"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shop_search_back"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/shop_shop_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shop"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@id/shop_shop_back_iv"
+        app:layout_constraintTop_toTopOf="@id/shop_shop_back_iv"
+        app:layout_constraintBottom_toBottomOf="@id/shop_shop_back_iv"/>
+
+    <ImageView
+        android:id="@+id/shop_shop_wishlist_iv"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_save"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/shop_shop_back_iv"
+        app:layout_constraintBottom_toBottomOf="@id/shop_shop_back_iv"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/shop_shop_following_shop_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="팔로우하는 Shop"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shop_shop_title_tv"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/shop_shop_following_shop_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/shop_shop_following_shop_tv">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/shop_shop_following_shop1_constraintlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/shop_shop_following_shop1_company_constraintlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/shop_shop_following_shop1_company_iv"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/shop_content5"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/shop_shop_following_shop1_company_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="altdif"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="7dp"
+                    app:layout_constraintVertical_chainStyle="packed"
+                    app:layout_constraintTop_toTopOf="@id/shop_shop_following_shop1_company_iv"
+                    app:layout_constraintBottom_toTopOf="@id/shop_shop_following_shop1_company_follower_tv"
+                    app:layout_constraintStart_toEndOf="@id/shop_shop_following_shop1_company_iv"/>
+
+                <TextView
+                    android:id="@+id/shop_shop_following_shop1_company_follower_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="팔로워 1.5만명"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/gray_color"
+                    app:layout_constraintStart_toStartOf="@id/shop_shop_following_shop1_company_title_tv"
+                    app:layout_constraintTop_toBottomOf="@id/shop_shop_following_shop1_company_title_tv"
+                    app:layout_constraintBottom_toBottomOf="@id/shop_shop_following_shop1_company_iv"/>
+
+                <TextView
+                    android:id="@+id/shop_shop_following_shop1_company_go_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shop 보기"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:textColor="#00BFFF"
+                    app:layout_constraintTop_toTopOf="@id/shop_shop_following_shop1_company_iv"
+                    app:layout_constraintBottom_toBottomOf="@id/shop_shop_following_shop1_company_iv"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/shop_shop_following_shop1_item_constraintlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintTop_toBottomOf="@id/shop_shop_following_shop1_company_constraintlayout"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/shop_shop_following_shop1_item1_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/shop_content1"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/rectangle_gray_border"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    android:layout_marginEnd="3dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/shop_shop_following_shop1_item2_iv"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/shop_shop_following_shop1_item2_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/shop_content2"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/rectangle_gray_border"
+                    android:layout_marginEnd="3dp"
+                    app:layout_constraintStart_toEndOf="@id/shop_shop_following_shop1_item1_iv"
+                    app:layout_constraintEnd_toStartOf="@id/shop_shop_following_shop1_item3_iv"
+                    app:layout_constraintTop_toTopOf="@id/shop_shop_following_shop1_item1_iv"
+                    app:layout_constraintBottom_toBottomOf="@id/shop_shop_following_shop1_item1_iv"/>
+
+                <ImageView
+                    android:id="@+id/shop_shop_following_shop1_item3_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/shop_content3"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/rectangle_gray_border"
+                    app:layout_constraintStart_toEndOf="@id/shop_shop_following_shop1_item2_iv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/shop_shop_following_shop1_item1_iv"
+                    app:layout_constraintBottom_toBottomOf="@id/shop_shop_following_shop1_item1_iv"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/shop_shop_following_shop2_constraintlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/shop_shop_following_shop2_company_constraintlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/shop_shop_following_shop2_company_iv"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/shop_content5"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/shop_shop_following_shop2_company_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="altdif"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="7dp"
+                    app:layout_constraintVertical_chainStyle="packed"
+                    app:layout_constraintTop_toTopOf="@id/shop_shop_following_shop2_company_iv"
+                    app:layout_constraintBottom_toTopOf="@id/shop_shop_following_shop2_company_follower_tv"
+                    app:layout_constraintStart_toEndOf="@id/shop_shop_following_shop2_company_iv"/>
+
+                <TextView
+                    android:id="@+id/shop_shop_following_shop2_company_follower_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="팔로워 1.5만명"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/gray_color"
+                    app:layout_constraintStart_toStartOf="@id/shop_shop_following_shop2_company_title_tv"
+                    app:layout_constraintTop_toBottomOf="@id/shop_shop_following_shop2_company_title_tv"
+                    app:layout_constraintBottom_toBottomOf="@id/shop_shop_following_shop2_company_iv"/>
+
+                <TextView
+                    android:id="@+id/shop_shop_following_shop2_company_go_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shop 보기"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:textColor="#00BFFF"
+                    app:layout_constraintTop_toTopOf="@id/shop_shop_following_shop2_company_iv"
+                    app:layout_constraintBottom_toBottomOf="@id/shop_shop_following_shop2_company_iv"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/shop_shop_following_shop2_item_constraintlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintTop_toBottomOf="@id/shop_shop_following_shop2_company_constraintlayout"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/shop_shop_following_shop2_item1_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/shop_content1"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/rectangle_gray_border"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    android:layout_marginEnd="3dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/shop_shop_following_shop2_item2_iv"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/shop_shop_following_shop2_item2_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/shop_content2"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/rectangle_gray_border"
+                    android:layout_marginEnd="3dp"
+                    app:layout_constraintStart_toEndOf="@id/shop_shop_following_shop2_item1_iv"
+                    app:layout_constraintEnd_toStartOf="@id/shop_shop_following_shop2_item3_iv"
+                    app:layout_constraintTop_toTopOf="@id/shop_shop_following_shop2_item1_iv"
+                    app:layout_constraintBottom_toBottomOf="@id/shop_shop_following_shop2_item1_iv"/>
+
+                <ImageView
+                    android:id="@+id/shop_shop_following_shop2_item3_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/shop_content3"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/rectangle_gray_border"
+                    app:layout_constraintStart_toEndOf="@id/shop_shop_following_shop2_item2_iv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/shop_shop_following_shop2_item1_iv"
+                    app:layout_constraintBottom_toBottomOf="@id/shop_shop_following_shop2_item1_iv"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/shop_shop_following_and_recommend_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_color"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/shop_shop_following_shop_linearlayout"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/shop_shop_recommend_shop_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원님을 위한 Shop"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shop_shop_following_and_recommend_line"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

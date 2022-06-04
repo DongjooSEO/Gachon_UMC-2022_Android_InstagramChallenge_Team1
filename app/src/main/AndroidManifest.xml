@@ -18,6 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ShopSearchActivity">
+        </activity>
+        <activity
+            android:name=".ShopShopActivity">
+        </activity>
+        <activity
+            android:name=".ShopWishlistActivity">
+        </activity>
     </application>
 
 </manifest>
