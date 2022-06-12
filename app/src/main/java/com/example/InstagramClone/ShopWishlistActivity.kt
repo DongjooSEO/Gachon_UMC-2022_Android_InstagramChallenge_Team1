@@ -73,9 +73,8 @@ class ShopWishlistActivity : AppCompatActivity() {
         binding.shopWishlistContentRv.layoutManager =
             GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false)
 
-        val x = (resources.displayMetrics.density * 0).toInt()
+        val x = (resources.displayMetrics.density * 3).toInt()
         binding.shopWishlistContentRv.addItemDecoration(GridSpacingItemDecoration(x))
-
 
     }
 }

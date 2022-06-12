@@ -49,9 +49,37 @@ class ShopFragment : Fragment() {
             }
         }
 
+        binding.shopCategoryVideo.setOnClickListener {
+            activity?.let {
+                val intent = Intent(context, ShopVideoActivity::class.java)
+                startActivity(intent)
+            }
+        }
+
         binding.shopWishlistIv.setOnClickListener {
             activity?.let {
                 val intent = Intent(context, ShopWishlistActivity::class.java)
+                startActivity(intent)
+            }
+        }
+
+        binding.shopCategoryEditor.setOnClickListener {
+            activity?.let {
+                val intent = Intent(context, ShopEditorActivity::class.java)
+                startActivity(intent)
+            }
+        }
+
+        binding.shopCategoryCollections.setOnClickListener {
+            activity?.let {
+                val intent = Intent(context, ShopCollectionActivity::class.java)
+                startActivity(intent)
+            }
+        }
+
+        binding.shopCategoryGuide.setOnClickListener {
+            activity?.let {
+                val intent = Intent(context, ShopGuideActivity::class.java)
                 startActivity(intent)
             }
         }

@@ -28,9 +28,14 @@
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/round_normal.xml" value="0.2295" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/rounding.xml" value="0.2295" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/shop_company_circle.xml" value="0.2295" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/shop_round_normal.xml" value="0.2295" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/activity_shop_collection.xml" value="0.3367088607594937" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/activity_shop_editor.xml" value="0.25" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/activity_shop_guide.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/activity_shop_search.xml" value="0.2691131498470948" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/activity_shop_shop.xml" value="0.3481675392670157" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/activity_shop_video.xml" value="0.3367088607594937" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/activity_shop_wishlist.xml" value="0.33" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage.xml" value="0.33" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_search.xml" value="0.36614583333333334" />
@@ -38,6 +43,12 @@
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_shop_shop.xml" value="0.5492021276595744" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_loading.xml" value="0.67" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shop.xml" value="0.5" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shop_collection.xml" value="0.35278514588859416" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shop_editor.xml" value="0.2535612535612536" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shop_editor_subcontent.xml" value="0.5" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shop_guide.xml" value="0.5" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shop_movie.xml" value="0.67" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shop_video.xml" value="0.18645833333333334" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shop_wishlist.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shopspecial.xml" value="0.4517766497461929" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36614583333333334" />

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/item_shop_guide_img_iv"
+        android:layout_width="170dp"
+        android:layout_height="250dp"
+        android:src="@drawable/shop_content2"
+        android:scaleType="fitXY"
+        android:background="@drawable/shop_round_normal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/item_shop_guide_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="newborn clothes"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/black"
+        android:textSize="16sp"
+        android:shadowColor="@color/gray_color"
+        android:shadowDx="1.7"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.3"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="@id/item_shop_guide_user_img_iv"
+        app:layout_constraintBottom_toTopOf="@id/item_shop_guide_user_img_iv"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_shop_guide_user_img_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/shop_content8"
+        app:civ_border_color="@null"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/item_shop_guide_img_iv"
+        app:layout_constraintBottom_toBottomOf="@id/item_shop_guide_img_iv"/>
+
+    <TextView
+        android:id="@+id/item_shop_guide_user_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shop"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/black"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:shadowColor="@color/gray_color"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/item_shop_guide_user_img_iv"
+        app:layout_constraintTop_toTopOf="@id/item_shop_guide_user_img_iv"
+        app:layout_constraintBottom_toBottomOf="@id/item_shop_guide_user_img_iv"/>
+
+    <TextView
+        android:id="@+id/item_shop_guide_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제품 22개"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        android:shadowColor="@color/gray_color"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        app:layout_constraintStart_toStartOf="@id/item_shop_guide_user_img_iv"
+        app:layout_constraintBottom_toTopOf="@id/item_shop_guide_title_tv"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
