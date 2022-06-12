@@ -55,8 +55,11 @@
         <entry key="..\:/Users/userpc/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_tags.xml" value="0.179" />
         <entry key="..\:/Users/userpc/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_video.xml" value="0.179" />
         <entry key="..\:/Users/userpc/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_videos_2.xml" value="0.179" />
-        <entry key="..\:/Users/userpc/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_home.xml" value="0.11361981063364894" />
+        <entry key="..\:/Users/userpc/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/userpc/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage.xml" value="0.1875" />
+        <entry key="..\:/Users/userpc/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item.xml" value="0.1875" />
+        <entry key="..\:/Users/userpc/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_post.xml" value="0.25" />
+        <entry key="..\:/Users/userpc/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_story.xml" value="0.18" />
       </map>
     </option>
   </component>
