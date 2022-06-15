@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SearchingFragment"
-        android:exported="ture"/>
+        android:exported="true"/>
         <activity android:name=".ShopSearchActivity"></activity>
         <activity android:name=".ShopShopActivity"></activity>
         <activity android:name=".ShopVideoActivity"></activity>
