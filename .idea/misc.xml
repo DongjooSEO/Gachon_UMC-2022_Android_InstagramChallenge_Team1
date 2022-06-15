@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable-v24/ic_search_gray.xml" value="0.2295" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable-v24/shop_category_rounding.xml" value="0.2295" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_activityfeed.xml" value="0.1345" />
@@ -53,12 +54,25 @@
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shopspecial.xml" value="0.4517766497461929" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/doris/Downloads/udemy_android_template_bottomnavi-main/udemy_android_template_bottomnavi-main/app/src/main/res/layout/activity_main.xml" value="0.23233695652173914" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3525" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_arrow.xml" value="0.3525" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_burger.xml" value="0.3525" />
         <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_comment.xml" value="0.3655" />
         <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_emoji.xml" value="0.3655" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_newposts.xml" value="0.3525" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_profile.xml" value="0.3525" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_tagged.xml" value="0.3695" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_tags.xml" value="0.3695" />
         <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/activity_main.xml" value="0.31023550724637683" />
         <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_home.xml" value="0.19630192502532928" />
         <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_locker.xml" value="0.4036458333333333" />
-        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage.xml" value="0.4" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage_album.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage_follower.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage_following.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage_posts.xml" value="0.20820863616930313" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage_tagged.xml" value="0.20820863616930313" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage_tagme.xml" value="0.4036458333333333" />
         <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_reels.xml" value="0.4036458333333333" />
         <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_search.xml" value="0.19630192502532928" />
         <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_shop.xml" value="0.4036458333333333" />
@@ -75,7 +89,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
