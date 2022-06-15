@@ -39,7 +39,7 @@
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/activity_shop_wishlist.xml" value="0.33" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage.xml" value="0.33" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_search.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_shop.xml" value="0.25162337662337664" />
+        <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_shop.xml" value="0.1" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_shop_shop.xml" value="0.5492021276595744" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_loading.xml" value="0.67" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shop.xml" value="0.5" />
@@ -52,6 +52,26 @@
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shop_wishlist.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/item_shopspecial.xml" value="0.4517766497461929" />
         <entry key="..\:/Users/kaj12/Desktop/UMC/Instagram Clone Coding/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/doris/Downloads/udemy_android_template_bottomnavi-main/udemy_android_template_bottomnavi-main/app/src/main/res/layout/activity_main.xml" value="0.23233695652173914" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_comment.xml" value="0.3655" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/drawable/ic_emoji.xml" value="0.3655" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/activity_main.xml" value="0.31023550724637683" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_home.xml" value="0.19630192502532928" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_locker.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_mypage.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_reels.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_search.xml" value="0.19630192502532928" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/layout/fragment_shop.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/doris/git/Gachon_UMC-2022_Android_InstagramChallenge_Team1/app/src/main/res/menu/bottom_nav_menu.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/drawable-v24/main_btm_color_selector.xml" value="0.13240740740740742" />
+        <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/drawable/main_btm_color_selector.xml" value="0.13240740740740742" />
+        <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_Look.xml" value="0.1" />
+        <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_locker.xml" value="0.1" />
+        <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_look.xml" value="0.1" />
+        <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_search.xml" value="0.1" />
+        <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />      
       </map>
     </option>
   </component>
