@@ -27,6 +27,12 @@
         <activity android:name=".ShopEditorActivity"></activity>
         <activity android:name=".ShopCollectionActivity"></activity>
         <activity android:name=".ShopGuideActivity"></activity>
+        <activity android:name=".HomeDmActivity"></activity>
+        <activity android:name=".ChattingSearchActivity"></activity>
+        <activity android:name=".DmRequestActivity"></activity>
+        <activity android:name=".DmActivity"></activity>
+        <activity android:name=".StoryActivity"></activity>
+        <activity android:name=".ShopCartActivity"></activity>
     </application>
 
 </manifest>

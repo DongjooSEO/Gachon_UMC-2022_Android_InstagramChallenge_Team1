@@ -2,30 +2,25 @@ package com.example.InstagramClone
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AbsListView
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.*
-import com.example.InstagramClone.Constant.VIEW_TYPE_ITEM
-import com.example.InstagramClone.Constant.VIEW_TYPE_LOADING
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.InstagramClone.databinding.FragmentShopBinding
 
 class ShopFragment : Fragment() {
     lateinit var binding: FragmentShopBinding
-    private var shopDatas = ArrayList<Shop>()
-    private var shopSpecialDatas = ArrayList<ShopSpecial>()
-    private var shopDatas2 = ArrayList<Shop>()
-    private var shopAgainDatas = ArrayList<ShopSpecial>()
+    private var shop1Datas = ArrayList<Shop>()
+    private var shop1SpecialDatas = ArrayList<ShopSpecial>()
+    private var shop2Datas = ArrayList<Shop>()
+    private var shop2SpecialDatas = ArrayList<ShopSpecial>()
+    private var shop3Datas = ArrayList<Shop>()
+    private var shop3SpecialDatas = ArrayList<ShopSpecial>()
 
     private var shopDatasAll = ArrayList<Shop>()
-    lateinit var loadMoreItemsCells: ArrayList<Shop>
     lateinit var adapter: ShopDataAllRVAdapter
-    lateinit var scrollListener: RecyclerViewLoadMoreScroll
-    lateinit var mLayoutManager:RecyclerView.LayoutManager
 
 
     override fun onCreateView(
@@ -85,7 +80,7 @@ class ShopFragment : Fragment() {
         }
 
 
-        shopDatas.apply {
+        shop1Datas.apply {
             add(Shop(R.drawable.shop_content1))
             add(Shop(R.drawable.shop_content2))
             add(Shop(R.drawable.shop_content3))
@@ -96,7 +91,7 @@ class ShopFragment : Fragment() {
             add(Shop(R.drawable.shop_content8))
         }
 
-        val shopRVAdapter = ShopRVAdapter(shopDatas)
+        val shopRVAdapter = ShopRVAdapter(shop1Datas)
         binding.shopContentData1Rv.adapter = shopRVAdapter
         binding.shopContentData1Rv.layoutManager =
             GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
@@ -105,7 +100,7 @@ class ShopFragment : Fragment() {
         binding.shopContentData1Rv.addItemDecoration(GridSpacingItemDecoration(x))
 
 
-        shopSpecialDatas.apply {
+        shop1SpecialDatas.apply {
             add(
                 ShopSpecial(
                     "Lovely Kitty_curved mug",
@@ -180,7 +175,7 @@ class ShopFragment : Fragment() {
             )
         }
 
-        val shopSpecialRVAdapter = ShopSpecialRVAdapter(shopSpecialDatas)
+        val shopSpecialRVAdapter = ShopSpecialRVAdapter(shop1SpecialDatas)
         binding.shopContentData1SpecialInwishlistRv.adapter = shopSpecialRVAdapter
         binding.shopContentData1SpecialInwishlistRv.layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
@@ -191,7 +186,7 @@ class ShopFragment : Fragment() {
         )
 
 
-        shopDatas2.apply {
+        shop2Datas.apply {
             add(Shop(R.drawable.shop_content1))
             add(Shop(R.drawable.shop_content2))
             add(Shop(R.drawable.shop_content3))
@@ -202,8 +197,8 @@ class ShopFragment : Fragment() {
             add(Shop(R.drawable.shop_content8))
         }
 
-        val shop2RVAdapter = ShopRVAdapter(shopDatas2)
-        binding.shopContentData2Rv.adapter = shopRVAdapter
+        val shop2RVAdapter = ShopRVAdapter(shop2Datas)
+        binding.shopContentData2Rv.adapter = shop2RVAdapter
         binding.shopContentData2Rv.layoutManager =
             GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
 
@@ -211,7 +206,7 @@ class ShopFragment : Fragment() {
         binding.shopContentData2Rv.addItemDecoration(GridSpacingItemDecoration(z))
 
 
-        shopAgainDatas.apply {
+        shop2SpecialDatas.apply {
             add(
                 ShopSpecial(
                     "Lovely Kitty_curved mug",
@@ -286,17 +281,120 @@ class ShopFragment : Fragment() {
             )
         }
 
-        val shopAgainRVAdapter = ShopSpecialRVAdapter(shopAgainDatas)
-        binding.shopContentData2SpecialShopAgainRv.adapter = shopSpecialRVAdapter
+        val shop2SpecialRVAdapter = ShopSpecialRVAdapter(shop2SpecialDatas)
+        binding.shopContentData2SpecialShopAgainRv.adapter = shop2SpecialRVAdapter
         binding.shopContentData2SpecialShopAgainRv.layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
         val k = (resources.displayMetrics.density * 6).toInt()
         binding.shopContentData2SpecialShopAgainRv.addItemDecoration(
-            HorizontalSpacingItemDecoration(
-                k,
-                2 * k
+            HorizontalSpacingItemDecoration(k, 2 * k)
+        )
+
+
+        shop3Datas.apply {
+            add(Shop(R.drawable.shop_content1))
+            add(Shop(R.drawable.shop_content2))
+            add(Shop(R.drawable.shop_content3))
+            add(Shop(R.drawable.shop_content4))
+            add(Shop(R.drawable.shop_content5))
+            add(Shop(R.drawable.shop_content6))
+            add(Shop(R.drawable.shop_content7))
+            add(Shop(R.drawable.shop_content8))
+        }
+
+        val shop3RVAdapter = ShopRVAdapter(shop3Datas)
+        binding.shopContentData3Rv.adapter = shop3RVAdapter
+        binding.shopContentData3Rv.layoutManager =
+            GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
+
+        val q = (resources.displayMetrics.density * 3).toInt()
+        binding.shopContentData3Rv.addItemDecoration(GridSpacingItemDecoration(q))
+
+
+        shop3SpecialDatas.apply {
+            add(
+                ShopSpecial(
+                    "Lovely Kitty_curved mug",
+                    "studihome__",
+                    R.drawable.shop_content8,
+                    R.drawable.shop_content1
+                )
             )
+            add(
+                ShopSpecial(
+                    "[낼나베이직]애플펜슬 펜촉 라이트(3개입)",
+                    "nelna.shop",
+                    R.drawable.shop_content7,
+                    R.drawable.shop_content2
+                )
+            )
+            add(
+                ShopSpecial(
+                    "palette_dawn sky",
+                    "jongjong_2020",
+                    R.drawable.shop_content6,
+                    R.drawable.shop_content3
+                )
+            )
+            add(
+                ShopSpecial(
+                    "극세사 소프트 담요_브라키오",
+                    "joguman.store",
+                    R.drawable.shop_content5,
+                    R.drawable.shop_content4
+                )
+            )
+            add(
+                ShopSpecial(
+                    "무지개구름 파우치",
+                    "wittypixy",
+                    R.drawable.shop_content4,
+                    R.drawable.shop_content5
+                )
+            )
+            add(
+                ShopSpecial(
+                    "루카랩후르츠홀리데이유리컵",
+                    "your10x10",
+                    R.drawable.shop_content3,
+                    R.drawable.shop_content6
+                )
+            )
+            add(
+                ShopSpecial(
+                    "크림 세이호",
+                    "hozumipocket",
+                    R.drawable.shop_content2,
+                    R.drawable.shop_content7
+                )
+            )
+            add(
+                ShopSpecial(
+                    "레이지 타이거 빅 에코백",
+                    "muziktiger",
+                    R.drawable.shop_content1,
+                    R.drawable.shop_content8
+                )
+            )
+            add(
+                ShopSpecial(
+                    "종이무드등키트",
+                    "muds_museum.goods",
+                    R.drawable.shop_content3,
+                    R.drawable.shop_content4
+                )
+            )
+        }
+
+        val shop3SpecialRVAdapter = ShopSpecialRVAdapter(shop3SpecialDatas)
+        binding.shopContentData3SpecialShopAgainRv.adapter = shop3SpecialRVAdapter
+        binding.shopContentData3SpecialShopAgainRv.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+
+        val w = (resources.displayMetrics.density * 6).toInt()
+        binding.shopContentData3SpecialShopAgainRv.addItemDecoration(
+            HorizontalSpacingItemDecoration(w, 2 * w)
         )
 
 
@@ -312,71 +410,14 @@ class ShopFragment : Fragment() {
         }
 
         val shopDataAllRVAdapter = ShopRVAdapter(shopDatasAll)
-        binding.shopContentDataAllRv.adapter = shopRVAdapter
+        binding.shopContentDataAllRv.adapter = shopDataAllRVAdapter
         binding.shopContentDataAllRv.layoutManager =
             GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
 
         val a = (resources.displayMetrics.density * 3).toInt()
-        binding.shopContentDataAllRv.addItemDecoration(GridSpacingItemDecoration(z))
-
-//        adapter = ShopDataAllRVAdapter(shopDatasAll)
-//        adapter.notifyDataSetChanged()
-//        val shopDataAllRVAdapter = adapter
-//
-//        setRVLayoutManager()
-//        setRVScrollListener()
+        binding.shopContentDataAllRv.addItemDecoration(GridSpacingItemDecoration(a))
 
 
         return binding.root
     }
-
-//    private fun LoadMoreData(){
-//        adapter.addLoadingView()
-//        loadMoreItemsCells = ArrayList()
-//
-//        val start = adapter.getItemCount()
-//        val end = start + 8
-//
-//        Handler().postDelayed({
-//            for(i in start..end){
-//                loadMoreItemsCells.add(Shop(R.drawable.shop_content1))
-//            }
-//
-//            adapter.removeLoadingView()
-//
-//            adapter.addData(loadMoreItemsCells)
-//            scrollListener.setLoaded()
-//            binding.shopContentDataAllRv.post{
-//                adapter.notifyDataSetChanged()
-//            }
-//
-//        },3000)
-//    }
-//
-//    private fun setRVLayoutManager() {
-//        mLayoutManager = GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
-//        binding.shopContentDataAllRv.layoutManager = mLayoutManager
-//        binding.shopContentDataAllRv.setHasFixedSize(true)
-//        binding.shopContentDataAllRv.adapter = adapter
-//        (mLayoutManager as GridLayoutManager).spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
-//            override fun getSpanSize(position: Int): Int {
-//                return when (adapter.getItemViewType(position)) {
-//                    VIEW_TYPE_ITEM -> 1
-//                    VIEW_TYPE_LOADING -> 3 //number of columns of the grid
-//                    else -> -1
-//                }
-//            }
-//        }
-//    }
-//
-//    private fun setRVScrollListener() {
-//        scrollListener = RecyclerViewLoadMoreScroll(mLayoutManager as GridLayoutManager)
-//        scrollListener.setOnLoadMoreListener(object : OnLoadMoreListener {
-//            override fun onLoadMore() {
-//                LoadMoreData()
-//            }
-//        })
-//
-//        binding.shopContentDataAllRv.addOnScrollListener(scrollListener)
-//    }
 }

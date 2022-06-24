@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_to_friends_img_civ"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/img_album_exp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/item_to_friends_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아무개"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/item_to_friends_img_civ"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/item_to_friends_id_tv"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/item_to_friends_id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aaaaaa"
+        android:textColor="@color/gray_color"
+        android:textSize="13sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/item_to_friends_img_civ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_to_friends_name_tv"/>
+
+    //아이콘 바꾸기
+    <ImageView
+        android:id="@+id/item_to_friends_audio_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/dm_call"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@id/item_to_friends_video_iv"
+        app:layout_constraintTop_toTopOf="@id/item_to_friends_img_civ"
+        app:layout_constraintBottom_toBottomOf="@id/item_to_friends_img_civ"/>
+
+    <ImageView
+        android:id="@+id/item_to_friends_video_iv"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/dm_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_to_friends_img_civ"
+        app:layout_constraintBottom_toBottomOf="@id/item_to_friends_img_civ"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

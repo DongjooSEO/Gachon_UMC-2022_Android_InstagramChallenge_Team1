@@ -13,14 +13,20 @@ class GridSpacingItemDecoration(private val padding: Int): RecyclerView.ItemDeco
         state: RecyclerView.State
     ) {
         super.getItemOffsets(outRect, view, parent, state)
+//
+//        outRect.top = padding
+//        outRect.bottom = padding
+//        outRect.left = padding
+//        outRect.right = padding
+
         val position:Int = parent.getChildAdapterPosition(view)
         val column = position % 2
 
 
-        outRect.left = column * padding / 2
+        outRect.left = column * padding/4
         outRect.right = padding - (column + 1) * padding / 2
         if(position >= 2){
-            outRect.top = padding
+            outRect.top = padding * 4
         }
     }
 

@@ -6,7 +6,7 @@
 
     <ImageView
         android:id="@+id/item_shop_guide_img_iv"
-        android:layout_width="170dp"
+        android:layout_width="185dp"
         android:layout_height="250dp"
         android:src="@drawable/shop_content2"
         android:scaleType="fitXY"
