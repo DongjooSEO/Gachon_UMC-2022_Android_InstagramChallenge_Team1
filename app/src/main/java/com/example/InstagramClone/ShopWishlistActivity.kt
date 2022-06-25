@@ -1,5 +1,6 @@
 package com.example.InstagramClone
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +18,11 @@ class ShopWishlistActivity : AppCompatActivity() {
 
         binding.shopWishlistBackIv.setOnClickListener {
             finish()
+        }
+
+        binding.shopWishlistCartIv.setOnClickListener {
+            val intent  = Intent(this, ShopCartActivity::class.java)
+            startActivity(intent)
         }
 
         wishDatas.apply {

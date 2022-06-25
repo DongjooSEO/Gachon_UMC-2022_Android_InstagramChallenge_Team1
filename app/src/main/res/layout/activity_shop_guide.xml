@@ -2,16 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
         android:id="@+id/shop_guide_back_iv"
-        android:layout_width="25dp"
+        android:layout_width="22dp"
         android:layout_height="30dp"
         android:scaleType="fitCenter"
         android:src="@drawable/shop_search_back"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="13dp"
         android:layout_marginStart="15dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="가이드"
         android:textStyle="bold"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         android:layout_marginStart="30dp"
         app:layout_constraintStart_toEndOf="@id/shop_guide_back_iv"
@@ -31,9 +32,9 @@
 
     <ImageView
         android:id="@+id/shop_guide_wishlist_iv"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:src="@drawable/ic_save"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/shop_wishlist"
         android:layout_marginEnd="20dp"
         app:layout_constraintTop_toTopOf="@id/shop_guide_back_iv"
         app:layout_constraintBottom_toBottomOf="@id/shop_guide_back_iv"
@@ -42,10 +43,14 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/shop_guide_content_rv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         tools:listitem="@layout/item_shop_guide"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/shop_guide_title_tv"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
