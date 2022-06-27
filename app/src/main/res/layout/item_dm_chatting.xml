@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chatting_user_img_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/img_album_exp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chatting_user_info_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/chatting_user_img_iv"
+        app:layout_constraintEnd_toStartOf="@id/chatting_camera_iv"
+        app:layout_constraintTop_toTopOf="@id/chatting_user_img_iv"
+        app:layout_constraintBottom_toBottomOf="@id/chatting_user_img_iv">
+
+        <TextView
+            android:id="@+id/chatting_user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가나다"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/chatting_time_tv"
+            app:layout_constraintVertical_chainStyle="packed"/>
+
+        <TextView
+            android:id="@+id/chatting_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1시간 전에 읽음"
+            android:textColor="@color/gray_color"
+            android:textSize="13sp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chatting_user_name_tv"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    //알림(파란동그라미) 넣어야 됨
+    <ImageView
+        android:id="@+id/chatting_camera_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/dm_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/chatting_user_img_iv"
+        app:layout_constraintBottom_toBottomOf="@id/chatting_user_img_iv"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

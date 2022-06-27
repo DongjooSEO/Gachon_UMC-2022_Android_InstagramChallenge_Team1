@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/textview_background_gray_radius">
+
+                <ImageView
+                    android:id="@+id/search_ic_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/textview_background_gray_radius"
+                    android:src="@drawable/ic_search_bar" />
+
+                <TextView
+                    android:id="@+id/search_bar_tv"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#808080"
+                    android:textSize="18sp"
+                    android:text="검색"
+                    android:background="@drawable/textview_background_gray_radius"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_map_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img_search_map"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/search_bar"/>
+
+        <LinearLayout
+            android:id="@+id/search_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/search_bar"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/search_img1_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_1"/>
+
+            <ImageView
+                android:id="@+id/search_img2_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_2"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_img3_iv"
+            android:layout_width="138dp"
+            android:layout_height="276dp"
+            android:background="@drawable/img_search_4"
+            app:layout_constraintTop_toBottomOf="@id/search_bar"
+            app:layout_constraintStart_toEndOf="@id/search_content1"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/search_content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/search_content1">
+
+            <ImageView
+                android:id="@+id/search_img4_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_3"/>
+
+            <ImageView
+                android:id="@+id/search_img5_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_5"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_img6_iv"
+            android:layout_width="138dp"
+            android:layout_height="276dp"
+            android:background="@drawable/img_search_8"
+            app:layout_constraintTop_toBottomOf="@id/search_content2"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/search_content3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/search_img6_iv"
+            app:layout_constraintTop_toBottomOf="@id/search_content2">
+
+            <ImageView
+                android:id="@+id/search_img7_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_1"/>
+
+            <ImageView
+                android:id="@+id/search_img8_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_content4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/search_img6_iv"
+            app:layout_constraintTop_toBottomOf="@id/search_content3">
+
+            <ImageView
+                android:id="@+id/search_img9_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_7"/>
+
+            <ImageView
+                android:id="@+id/search_img10_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_content5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/search_content4">
+
+            <ImageView
+                android:id="@+id/search_img11_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_1"/>
+
+            <ImageView
+                android:id="@+id/search_img12_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_2"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_img13_iv"
+            android:layout_width="138dp"
+            android:layout_height="276dp"
+            android:background="@drawable/img_search_4"
+            app:layout_constraintTop_toBottomOf="@id/search_content4"
+            app:layout_constraintStart_toEndOf="@id/search_content5"/>
+
+        <LinearLayout
+            android:id="@+id/search_content6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/search_content5">
+
+            <ImageView
+                android:id="@+id/search_img14_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_3"/>
+
+            <ImageView
+                android:id="@+id/search_img15_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_5"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_img16_iv"
+            android:layout_width="138dp"
+            android:layout_height="276dp"
+            android:background="@drawable/img_search_8"
+            app:layout_constraintTop_toBottomOf="@id/search_content6"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/search_content7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/search_img6_iv"
+            app:layout_constraintTop_toBottomOf="@id/search_content6">
+
+            <ImageView
+                android:id="@+id/search_img17_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_1"/>
+
+            <ImageView
+                android:id="@+id/search_img18_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_content8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/search_img6_iv"
+            app:layout_constraintTop_toBottomOf="@id/search_content7">
+
+            <ImageView
+                android:id="@+id/search_img19_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_7"/>
+
+            <ImageView
+                android:id="@+id/search_img20_iv"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/img_search_2"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

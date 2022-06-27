@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/shop_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shop"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/shop_wishlist_iv"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/shop_wishlist"
+        android:layout_marginEnd="25dp"
+        android:padding="1dp"
+        app:layout_constraintTop_toTopOf="@id/shop_title_tv"
+        app:layout_constraintBottom_toBottomOf="@id/shop_title_tv"
+        app:layout_constraintEnd_toStartOf="@id/shop_burger_iv"/>
+
+    <ImageView
+        android:id="@+id/shop_burger_iv"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/burger"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/shop_wishlist_iv"
+        app:layout_constraintBottom_toBottomOf="@id/shop_wishlist_iv"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ScrollView
+        android:id="@+id/shop_content_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/shop_title_tv"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/shop_content_in_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/shop_search_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounding"
+                android:hint="Shop 검색"
+                android:drawableLeft="@drawable/ic_search_gray"
+                android:drawablePadding="10dp"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            <HorizontalScrollView
+                android:id="@+id/shop_category_horizental_scroll_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_constraintTop_toBottomOf="@id/shop_search_et"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/shop_category_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Shop"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:background="@drawable/shop_category_rounding"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+
+                    <TextView
+                        android:id="@+id/shop_category_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="동영상"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:background="@drawable/shop_category_rounding"
+                        android:layout_marginEnd="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+
+                    <TextView
+                        android:id="@+id/shop_category_editor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="에디터 추천"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:background="@drawable/shop_category_rounding"
+                        android:layout_marginEnd="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+
+                    <TextView
+                        android:id="@+id/shop_category_collections"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Collections"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:background="@drawable/shop_category_rounding"
+                        android:layout_marginEnd="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+
+                    <TextView
+                        android:id="@+id/shop_category_guide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="가이드"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:background="@drawable/shop_category_rounding"
+                        android:layout_marginEnd="15dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_content_data1_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_shop"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/shop_category_horizental_scroll_view"/>
+
+            <TextView
+                android:id="@+id/shop_content_data1_special_inwishlist_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="위시리스트에 추가된 제품"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintTop_toBottomOf="@id/shop_content_data1_rv"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/shop_content_data1_special_inwishlist_watch_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="모두보기"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintTop_toTopOf="@id/shop_content_data1_special_inwishlist_title_tv"
+                app:layout_constraintBottom_toBottomOf="@id/shop_content_data1_special_inwishlist_title_tv"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_content_data1_special_inwishlist_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/shop_content_data1_special_inwishlist_title_tv"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_content_data2_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_shop"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/shop_content_data1_special_inwishlist_rv"/>
+
+            <TextView
+                android:id="@+id/shop_content_data2_special_shop_again_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="이 Shop 다시 방문하기"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintTop_toBottomOf="@id/shop_content_data2_rv"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/shop_content_data2_special_shop_again_watch_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="모두보기"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintTop_toTopOf="@id/shop_content_data2_special_shop_again_title_tv"
+                app:layout_constraintBottom_toBottomOf="@id/shop_content_data2_special_shop_again_title_tv"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_content_data2_special_shop_again_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/shop_content_data2_special_shop_again_title_tv"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_content_data3_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_shop"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/shop_content_data2_special_shop_again_rv"/>
+
+            <TextView
+                android:id="@+id/shop_content_data3_special_shop_again_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="some store 및 비슷한 Shop"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintTop_toBottomOf="@id/shop_content_data3_rv"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/shop_content_data3_special_shop_again_watch_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="모두보기"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintTop_toTopOf="@id/shop_content_data3_special_shop_again_title_tv"
+                app:layout_constraintBottom_toBottomOf="@id/shop_content_data3_special_shop_again_title_tv"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_content_data3_special_shop_again_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/shop_content_data3_special_shop_again_title_tv"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_content_data_all_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_shop"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="120dp"
+                app:layout_constraintTop_toBottomOf="@id/shop_content_data3_special_shop_again_rv"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

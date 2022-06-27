@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.InstagramClone">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InstagramClone">
+        <activity
+            android:name="com.example.InstagramClone.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SearchingFragment"
+        android:exported="true"/>
+        <activity android:name=".ShopSearchActivity"></activity>
+        <activity android:name=".ShopShopActivity"></activity>
+        <activity android:name=".ShopVideoActivity"></activity>
+        <activity android:name=".ShopWishlistActivity"></activity>
+        <activity android:name=".ShopEditorActivity"></activity>
+        <activity android:name=".ShopCollectionActivity"></activity>
+        <activity android:name=".ShopGuideActivity"></activity>
+        <activity android:name=".HomeDmActivity"></activity>
+        <activity android:name=".ChattingSearchActivity"></activity>
+        <activity android:name=".DmRequestActivity"></activity>
+        <activity android:name=".DmActivity"></activity>
+        <activity android:name=".StoryActivity"></activity>
+        <activity android:name=".ShopCartActivity"></activity>
+        <activity android:name=".Signup1Activity"></activity>
+        <activity android:name=".Signup2Activity"></activity>
+        <activity android:name=".Signup3Activity"></activity>
+    </application>
+
+</manifest>

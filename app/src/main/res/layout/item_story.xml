@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/is_read_story_iv"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="11.5dp"
+        android:src="@drawable/no_read"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/is_not_read_story_iv"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_marginStart="11.5dp"-->
+<!--        android:src="@drawable/read"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_story_civ"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:src="@drawable/img_album_exp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginEnd="2.2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintTop_toTopOf="@id/is_read_story_iv"
+        app:layout_constraintBottom_toBottomOf="@id/is_read_story_iv"
+        app:layout_constraintStart_toStartOf="@id/is_read_story_iv"
+        app:layout_constraintEnd_toEndOf="@id/is_read_story_iv"/>
+
+    <TextView
+        android:id="@+id/user_story_id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="win_min_0213"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@id/user_story_civ"
+        app:layout_constraintStart_toStartOf="@id/user_story_civ"
+        app:layout_constraintEnd_toEndOf="@id/user_story_civ"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
