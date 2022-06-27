@@ -33,6 +33,9 @@
         <activity android:name=".DmActivity"></activity>
         <activity android:name=".StoryActivity"></activity>
         <activity android:name=".ShopCartActivity"></activity>
+        <activity android:name=".Signup1Activity"></activity>
+        <activity android:name=".Signup2Activity"></activity>
+        <activity android:name=".Signup3Activity"></activity>
     </application>
 
 </manifest>
